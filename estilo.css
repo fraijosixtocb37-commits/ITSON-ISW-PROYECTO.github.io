@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 15, 30, 0.75);
+    backdrop-filter: blur(12px);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.25);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.7);
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-shadow: 0 0 15px #00eaff;
+    transform: scale(1.08);
+}
+
+/* VIDEO DE FONDO */ */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px;
+}
+
+.contenido h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.contenido p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECCIONES FUTURISTAS */
+.seccion {
+    padding: 140px 60px;
+    background: linear-gradient(135deg, #0a0f1f, #111b35);
+    color: #d2faff;
+    min-height: 100vh;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: inset 0 0 50px rgba(0, 255, 255, 0.08);
+}
+
+.seccion h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.75);
+    letter-spacing: 2px;
+}
+
+.seccion p {
+    font-size: 20px;
+    max-width: 750px;
+    line-height: 1.7;
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(0, 150, 255, 0.4);
+}
+
+/* Imagen decorativa a la derecha */
+.seccion {
+    position: relative;
+}
+
+.float-img {
+    float: right;
+    width: 480px;
+    margin-left: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00eaff;
+}
+
+.plan-img {
+    float: right;
+    width: 650px;
+    margin-left: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00eaff;
+
+
+}
+
+.perfil-img {
+    float: right;
+    width: 650px;
+    margin-left: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00eaff;
+
+
+}
+
+.btn-ver-video {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    padding: 12px 25px;
+    background: rgba(0, 255, 255, 0.4);
+    border: 2px solid #00eaff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: 0.3s;
+}
+
+.btn-ver-video:hover {
+    background: rgba(0, 255, 255, 0.7);
+    transform: scale(1.05);
+}
+
+/* MODAL */
+.modal-video {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(6px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-contenido {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+}
+
+.modal-contenido video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 25px #00eaff;
+}
+
+/* Botón cerrar */
+.cerrar {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 28px;
+    cursor: pointer;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}

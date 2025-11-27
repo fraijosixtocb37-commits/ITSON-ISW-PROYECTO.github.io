@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="estilo.css" />
+<title>ITSON FAKE</title>
+</head>
+<body>
+<nav class="navbar">
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="carrera.html">Acerca de isw</a></li>
+<li><a href="informacion.html">Información adicional</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+
+
+<div class="video-container">
+<video autoplay muted loop class="video-fondo">
+<source src="videos/isw.MP4" type="video/mp4" />
+</video>
+<div class="contenido">
+
+
+</div>
+</div>
+
+<!-- CONTENEDOR DEL VIDEO EMERGENTE -->
+<div id="modalVideo" class="modal-video">
+    <div class="modal-contenido">
+        <span id="cerrarModal" class="cerrar">✖</span>
+
+        <video id="videoConAudio" controls autoplay>
+            <source src="videos/isw.MP4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+</body>
+<script>
+    const modal = document.getElementById("modalVideo");
+    const btn = document.getElementById("verVideo");
+    const cerrar = document.getElementById("cerrarModal");
+    const videoAudio = document.getElementById("videoConAudio");
+
+    btn.onclick = () => {
+        modal.style.display = "flex";
+        videoAudio.currentTime = 0;
+        videoAudio.play();
+    };
+
+    cerrar.onclick = () => {
+        modal.style.display = "none";
+        videoAudio.pause();
+    };
+</script>
+
+</html>
