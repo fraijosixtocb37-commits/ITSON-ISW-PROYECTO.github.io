@@ -200,3 +200,128 @@ body {
     color: #00eaff;
     text-shadow: 0 0 10px #00eaff;
 }
+
+/* ============================================================
+   RESPONSIVE PARA TABLET
+   ============================================================ */
+@media (max-width: 992px) {
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .float-img,
+    .plan-img,
+    .perfil-img {
+        width: 300px;
+    }
+
+    .seccion {
+        padding: 120px 30px;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE PARA CELULARES
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* NAVBAR EN COLUMNA */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 15px;
+        border-radius: 10px;
+        backdrop-filter: blur(8px);
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    /* VIDEO RESPONSIVE */
+    .video-container {
+        height: 70vh;
+    }
+
+    /* CONTENIDO DEL VIDEO */
+    .contenido h1 {
+        font-size: 28px;
+    }
+
+    .contenido p {
+        font-size: 16px;
+    }
+
+    /* IMÁGENES GRANDES QUE SE ROMPEN */
+    .float-img,
+    .plan-img,
+    .perfil-img {
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+        display: block;
+    }
+
+    /* TEXTO */
+    .seccion h2 {
+        font-size: 30px;
+    }
+
+    .seccion p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .seccion {
+        padding: 100px 20px;
+    }
+
+    /* MODAL RESPONSIVE */
+    .modal-contenido {
+        width: 95%;
+    }
+
+    .cerrar {
+        top: -30px;
+        font-size: 24px;
+    }
+}
+
+/* ============================================================
+   EXTRA PEQUEÑO (CELULARES MUY CHICOS)
+   ============================================================ */
+@media (max-width: 480px) {
+
+    .navbar ul {
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .contenido h1 {
+        font-size: 24px;
+    }
+
+    .contenido p {
+        font-size: 14px;
+    }
+
+    .btn-ver-video {
+        bottom: 20px;
+        left: 20px;
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
